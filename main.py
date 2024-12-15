@@ -4,7 +4,7 @@ from sentence_transformers import SentenceTransformer, util
 
 nlp = spacy.load("en_core_web_sm")
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")  
-gpt_model = pipeline("text-generation", model="EleutherAI/gpt-neo-125M")  # Открытая модель для генерации текста
+gpt_model = pipeline("text-generation", model="EleutherAI/gpt-neo-125M")  
 
 contract_text = """
 1. The party agrees to deliver the goods within 30 days.
